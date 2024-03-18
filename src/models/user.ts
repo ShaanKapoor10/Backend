@@ -1,4 +1,5 @@
 import mongoose from "mongoose";
+import { number } from "zod";
 
 const userSchema = new mongoose.Schema({
     auth0Id : {
@@ -16,10 +17,10 @@ const userSchema = new mongoose.Schema({
         type:String,
     },
     city: {
-        type:String,
+        type:Number,
     },
     country: {
-        type:String,
+        type:Number,
     },
 
 });
